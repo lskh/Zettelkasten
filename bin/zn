@@ -1,0 +1,19 @@
+#!/bin/sh
+# zn - new zettelkasten note
+
+ID=`date "+%Y%m%d%H%M%S"`
+
+ZK=~/Zettelkasten
+
+cat > $ZK/$ID.md <<EOF
+    ID: $ID                     `date`
+
+## <++>
+
+<++>
+
+    <++>
+
+EOF
+
+vim $ZK/$ID.md

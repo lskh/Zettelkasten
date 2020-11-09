@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# fz - find zettel
+
+ZK=~/Zettelkasten
+
+n=$((0))
+i=$((1))
+
+for Z in `grep -li "$*" $ZK/*.md` 
+ do
+  n=$((n+1))
+
+#  ZS[$n]="$Z"
+
+  echo "$Z:"
+  grep --color=auto -i -A 3 -B 3 -T -n "$*" $Z
+ done
+
+#while true
+# do
+#  echo "$i -> ${ZS[$i]}"
+#
+#  i=$((i+1))
+# done
+  

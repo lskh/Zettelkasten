@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# zc - concatenate Zettels 
+
+cat `grep -li "$*" ~/Zettelkasten/*.md`
+

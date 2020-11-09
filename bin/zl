@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# zl - pipe Zettels through less
+
+cat `grep -li "$*" ~/Zettelkasten/*.md` | less
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# ze - edit Zettels
+
+vi -p `grep -li "$*" ~/Zettelkasten/*.md`
+

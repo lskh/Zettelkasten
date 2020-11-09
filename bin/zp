@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# zp - pipe Zettels through Markdown and display PDF 
+
+PDF=$$.pdf
+
+cat `grep -li "$*" ~/Zettelkasten/*.md` | pandoc -o $PDF && zathura $PDF &
+
