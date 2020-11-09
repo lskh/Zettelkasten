@@ -4,5 +4,5 @@
 
 PDF=$$.pdf
 
-cat `grep -li "$*" ~/Zettelkasten/*.md` | pandoc -o $PDF && zathura $PDF &
+cat `grep -li "$*" ~/Zettelkasten/[0-9]*.md` | pandoc -o $PDF && zathura $PDF &
 

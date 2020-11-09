@@ -2,5 +2,5 @@
 
 # zl - pipe Zettels through less
 
-cat `grep -li "$*" ~/Zettelkasten/*.md` | less
+cat `grep -li "$*" ~/Zettelkasten/[0-9]*.md` | less
 

@@ -2,5 +2,5 @@
 
 # ze - edit Zettels
 
-vi -p `grep -li "$*" ~/Zettelkasten/*.md`
+vi -p `grep -li "$*" ~/Zettelkasten/[0-9]*.md`
 

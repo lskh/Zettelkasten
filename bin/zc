@@ -2,5 +2,5 @@
 
 # zc - concatenate Zettels 
 
-cat `grep -li "$*" ~/Zettelkasten/*.md`
+cat `grep -li "$*" ~/Zettelkasten/[0-9]*.md`
 

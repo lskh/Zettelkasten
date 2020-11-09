@@ -7,7 +7,7 @@ ZK=~/Zettelkasten
 n=$((0))
 i=$((1))
 
-for Z in `grep -li "$*" $ZK/*.md` 
+for Z in `grep -li "$*" $ZK/[0-9]*.md` 
  do
   n=$((n+1))
 
